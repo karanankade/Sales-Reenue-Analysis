@@ -24,6 +24,7 @@ df = load_and_process_data(data_file)
 # Initialize Dash app
 app = dash.Dash(__name__)
 app.title = "Sales & Revenue Analysis Dashboard"
+server = app.server  # Expose Flask server for gunicorn / Render
 
 # Get unique values for filters
 filter_values = get_unique_values(df)
