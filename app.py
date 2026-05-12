@@ -323,4 +323,4 @@ def update_dashboard(selected_year, selected_segment, selected_country, selected
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host='0.0.0.0', port=8050)
+    app.run(debug=False, host='0.0.0.0', port=8050)
